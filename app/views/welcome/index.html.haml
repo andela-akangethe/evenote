@@ -1,1 +1,29 @@
-%h1 Voila! This is the Placeholder
+#banner
+    .banner_content
+        %h1 Evenote
+        %p Your life's Work!
+        %button= link_to "Sign Up", new_user_registration_path
+#callouts
+    .callout_inner
+        .wrapper
+            .callout
+                %h2 Notes
+                Create a project to-do list. Jot down a reminder. Or snap a picture of a sketch. A note can be anything you want it to be. And once you make a note, it’s accessible wherever you go, forever.
+
+            .callout
+                %h2 Have it everywhere
+                Capture a note once, and it’s instantly available on all your devices. Never worry about where you saved something because it’s in Evernote, and Evenote is wherever you are.
+
+
+            .callout
+                %h2 Find anything fast
+                Evenote makes sure the notes you’ve saved are easy to find. You can even search for handwritten words buried deep within your notes. 
+
+#bottom_cta
+    .wrapper
+        %h2 Store All Your Notes!
+        %p Be Different, Join the Elite!
+        %button= link_to "Start Here!!!", new_user_registration_path
+
+%footer
+    %p &copy; #TIA Alex Nayagah

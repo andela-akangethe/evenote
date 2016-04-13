@@ -1,3 +1,108 @@
 // Place all the styles related to the Docs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+   // DOCS INDEX
+
+#docs {
+    .doc {
+        background: #78594B;
+        width: 90%;
+        min-height: 100px;
+        margin: 1rem 1%;
+        padding: 1.5rem 2.5%;
+        float: left;
+        border-radius: 2.9rem;
+        position: relative;
+        text-align: center;
+        .title {
+            @include bold_font;
+            color: white;
+            margin: 0;
+            left: 4.5%;
+            font-size: 2.0em;
+            letter-spacing: 1px;
+        }
+        .date {
+            position: absolute;
+            bottom: .25rem;
+            left: 5.5%;
+            color: white;
+            font-weight: lighter;
+            font-size: .75rem;
+            text-align: center;
+        }
+        .content {
+            position: absolute;
+            bottom: .25rem;
+            left: 27.5%;
+            color: $light_gray;
+            font-weight: bold;
+            font-size: .75rem;
+            text-align: left;
+        }   
+    }
+}
+
+// DOCS SHOW
+
+#doc_show {
+    .title {
+        @include bold_font;
+        color: #78594B;
+        font-size: 2.0rem;
+        margin-bottom: 1.25rem;
+        padding-bottom: 1rem;
+        border-bottom: 1.0px solid rgba(82,158,204, 0.2);
+        text-align: center;
+    }
+    p {
+        font-size: 1.0rem;
+        line-height: 1.75;
+    }
+    .buttons {
+        margin-top: 3rem;
+        text-align: center;
+        a.button {
+            padding: .2rem 1.5rem;
+            border-radius: 0.1rem;
+            text-decoration: none;
+            color: #529ECC;
+            border: 5px solid #529ECC;
+            @include bold_font;
+            background: transparent;
+        }
+    }
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v16/MeFZ5NpSE1j8mC06Jh1miFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v16/UKmFXcLnvG78k2CT5LYRfFKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v16/MCZn_h27nLxWmTqnbmnb3lKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v16/G6-OYdAAwU5fSlE7MlBvhQLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
