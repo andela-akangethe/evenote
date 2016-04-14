@@ -1,29 +1,37 @@
-#banner
-    .banner_content
+%div.text-center.banner
+    %div.banner-inner
         %h1 Evenote
         %p Your life's Work!
-        %button= link_to "Sign Up", new_user_registration_path
-#callouts
-    .callout_inner
-        .wrapper
-            .callout
-                %h2 Notes
-                Create a project to-do list. Jot down a reminder. Or snap a picture of a sketch. A note can be anything you want it to be. And once you make a note, it’s accessible wherever you go, forever.
+        %button.btn.btn-lg.btn-raised.btn-primary.btn-color= link_to "Sign Up", new_user_registration_path
+%div.container
+    %p= notice
+    %p= alert
+    #callouts
+        .callout_inner
+            .wrapper
+                .callout
+                    .row
+                        .col-lg-4
+                            = image_tag("icon1.png", height: "210")
+                        .col-md-8
+                            %h2 Have it everywhere
+                            Capture a note once, and it’s instantly available on all your devices. Never worry about where you saved something because it’s in Evernote, and Evenote is wherever you are.
 
-            .callout
-                %h2 Have it everywhere
-                Capture a note once, and it’s instantly available on all your devices. Never worry about where you saved something because it’s in Evernote, and Evenote is wherever you are.
+                .callout
+                    .row
+                        .col-lg-8
+                            %h2 Find anything fast
+                            Evenote makes sure the notes you’ve saved are easy to find. You can even search for handwritten words buried deep within your notes. 
+                        .col-lg-4
+                            = image_tag("icon2.png", height: "210")
 
-
-            .callout
-                %h2 Find anything fast
-                Evenote makes sure the notes you’ve saved are easy to find. You can even search for handwritten words buried deep within your notes. 
-
-#bottom_cta
-    .wrapper
-        %h2 Store All Your Notes!
-        %p Be Different, Join the Elite!
-        %button= link_to "Start Here!!!", new_user_registration_path
-
-%footer
+                .callout
+                    .row
+                        .col-md-4
+                            = image_tag("icon3.png", height: "210")
+                        .col-lg-8
+                            %h2 Notes
+                            Create a project to-do list. Jot down a reminder. Or snap a picture of a sketch. A note can be anything you want it to be. And once you make a note, it’s accessible wherever you go, forever.
+                            
+%footer.text-center
     %p &copy; #TIA Alex Nayagah
